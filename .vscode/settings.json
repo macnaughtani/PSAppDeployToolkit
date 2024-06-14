@@ -24,7 +24,51 @@
     "powershell.codeFormatting.whitespaceAroundOperator": true,
     "powershell.codeFormatting.whitespaceBeforeOpenBrace": true,
     "powershell.codeFormatting.whitespaceBeforeOpenParen": true,
-    "powershell.powerShellDefaultVersion": "Windows PowerShell (x64)",
-    "powershell.scriptAnalysis.settingsPath": ".\\.vscode\\PSScriptAnalyzerSettings.psd1",
-    "dotnet.preferCSharpExtension": true
+    "powershell.powerShellDefaultVersion": "PowerShell (x64)",
+    "powershell.scriptAnalysis.settingsPath": ".\\\\.vscode\\\\PSScriptAnalyzerSettings.psd1",
+    "dotnet.preferCSharpExtension": true,
+    //-------- From mmelkersen / chrisGerke
+    "files.exclude": {
+        ".exe": false,
+        ".msi": false,
+        ".editorconfig": true,
+        ".gitattributes": true,
+        ".github": true,
+        "**/Deploy-Application.exe": true,
+        "**/Deploy-Application.exe.config": true,
+        "**/Thumbs.db": true,
+        "AppDeployToolkitLogo.png": true,
+        "CHANGELOG.txt": true,
+        "COPYING.Lesser": true,
+        "LICENSE": true,
+        "mkdocs.yml": true,
+        "PSAppDeployToolkit.pdf": true,
+        "README.md": true,
+        "TODO.txt": true,
+        "wiki": true,
+        "Testing": true,
+        "Sources": true,
+        "material": true,
+        "Examples": true,
+        "docs": true,
+        ".gitignore": true
+    },
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "path": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe",
+            "source": "PowerShell",
+            "icon": "terminal-powershell",
+            "args": [
+                "-NoLogo",
+                "-NoExit",
+                "-ExecutionPolicy",
+                "RemoteSigned",
+            ]
+        }
+    },
+    "editor.fontFamily": "\"MesloLGM Nerd Font\"",
+    "editor.fontLigatures": true,
+    "terminal.integrated.env.windows": {
+        "PATH": "C:\\Program Files\\PowerShell\\7;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\7-Zip;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\starship\\bin\\;C:\\Users\\ianadmin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ianadmin\\AppData\\Local\\Programs\\oh-my-posh\\bin"
+    }
 }

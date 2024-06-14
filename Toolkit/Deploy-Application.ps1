@@ -106,6 +106,7 @@ Try {
     ##* VARIABLE DECLARATION
     ##*===============================================
     ## Variables: Application
+    ## TODO Variables: Application
     [String]$appVendor = ''
     [String]$appName = ''
     [String]$appVersion = ''
@@ -117,6 +118,7 @@ Try {
     [String]$appScriptAuthor = '<author name>'
     ##*===============================================
     ## Variables: Install Titles (Only set here to override defaults set by the toolkit)
+    ## TODO Variables: Install Titles (Only set here to override defaults set by the toolkit)
     [String]$installName = ''
     [String]$installTitle = ''
 
@@ -181,9 +183,11 @@ Try {
         [String]$installPhase = 'Pre-Installation'
 
         ## Show Welcome Message, close Internet Explorer if required, allow up to 3 deferrals, verify there is enough disk space to complete the install, and persist the prompt
+        ## TODO Pre-install: Show Welcome Message
         Show-InstallationWelcome -CloseApps 'iexplore' -AllowDefer -DeferTimes 3 -CheckDiskSpace -PersistPrompt
 
         ## Show Progress Message (with the default message)
+        ## TODO Preinstall: Show Progress Message
         Show-InstallationProgress
 
         ## <Perform Pre-Installation tasks here>
